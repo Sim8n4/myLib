@@ -3,8 +3,8 @@ Questa libreria Python, myLib.py, contiene una serie di funzioni utili per varie
 
 ### Funzioni di Manipolazione delle Stringhe
 **rimuovi_punteggiatura(stringa):**
-  Rimuove tutti i caratteri di punteggiatura e i caratteri di a capo (\n) da una stringa.
-  Utilizza string.punctuation per ottenere tutti i caratteri di punteggiatura predefiniti.
+- Rimuove tutti i caratteri di punteggiatura e i caratteri di a capo (\n) da una stringa.
+- Utilizza string.punctuation per ottenere tutti i caratteri di punteggiatura predefiniti.
 
 **rimuovi_spazi(stringa):**
 - Rimuove tutti gli spazi da una stringa.
