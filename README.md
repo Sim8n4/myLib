@@ -1,7 +1,7 @@
 # myLib
 Questa libreria Python, myLib.py, contiene una serie di funzioni utili per varie operazioni matematiche e di manipolazione delle stringhe. Ecco una spiegazione dettagliata di ciascuna funzione:
 
-#### Funzioni di Manipolazione delle Stringhe
+### Funzioni di Manipolazione delle Stringhe
 
 rimuovi_punteggiatura(stringa):
   Rimuove tutti i caratteri di punteggiatura e i caratteri di a capo (\n) da una stringa.
@@ -15,7 +15,7 @@ rimuovi_caratteri(stringa, *caratteri_da_rimuovere):
   Rimuove una serie di caratteri specificati da una stringa.
   Utilizza una comprensione di lista per filtrare i caratteri indesiderati.
 
-#### Funzioni di Conversione e Controllo
+### Funzioni di Conversione e Controllo
 convertibile(variabile, tipo):
 Controlla se una variabile può essere convertita in un tipo specificato.
 Utilizza un blocco try-except per tentare la conversione e catturare eventuali eccezioni ValueError.
@@ -29,7 +29,7 @@ is_primo(numero):
   Controlla se un numero è primo.
   Utilizza la funzione divisori per determinare se il numero ha esattamente due divisori (1 e se stesso).
 
-#### Funzioni matematiche
+### Funzioni matematiche
 divisori(numero):
   Restituisce una lista di tutti i divisori di un numero.
   Utilizza una comprensione di lista per trovare i divisori.
@@ -55,3 +55,6 @@ fattoriale(numero):
   Utilizza una definizione ricorsiva per calcolare il fattoriale.
 
 Queste funzioni coprono una vasta gamma di operazioni comuni che possono essere utili in vari contesti di programmazione, dalla manipolazione delle stringhe alle operazioni matematiche di base.
+
+# test.py
+Semplicemente un file con delle chiamate alle funzioni per testarne il corretto funzionamento
