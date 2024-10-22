@@ -78,3 +78,47 @@ def fattoriale(numero):
         return 1  # Il fattoriale di 0 è 1
     else:
         return numero * fattoriale(numero - 1)  # Calcola il fattoriale ricorsivamente
+
+# Funzione per convertire un numero decimale in binario senza usare bin()
+def decimale_binario(numero):
+    if numero == 0:
+        return '0'
+    binario = ''
+    while numero > 0:
+        binario = str(numero % 2) + binario
+        numero = numero // 2
+    return binario
+
+# Funzione per convertire un numero binario in decimale
+def binario_decimale(binario):
+    decimale = int(binario, 2)  # Converte il numero binario in decimale
+    return decimale
+
+# Funzione per convertire un numero esadecimale in binario senza usare bin()
+def esadecimale_binario(esadecimale):
+    decimale = int(esadecimale, 16)  # Converte il numero esadecimale in decimale
+    return decimale_binario(decimale)  # Converte il numero decimale in binario
+
+# Funzione per convertire un numero esadecimale in decimale
+def esadecimale_decimale(esadecimale):
+    decimale = int(esadecimale, 16)  # Converte il numero esadecimale in decimale
+    return decimale
+
+def FrazBin2FrazDecimale(frazBin):
+    # Inizializza il risultato della frazione decimale
+    frazDec = 0.0
+    # Itera su ogni carattere nella stringa della frazione binaria
+    for i in range(len(frazBin)):
+        # Converte il corrente bit binario in un intero e aggiunge il suo contributo alla frazione decimale
+        frazDec += int(frazBin[i]) * 2 ** (-i - 1)
+    # Restituisce la frazione decimale calcolata
+    return frazDec
+
+# Funzione per convertire un numero esadecimale in binario
+def ex2cp2(ex):
+    ex_cp2 = '' # Inizializza la stringa del numero esadecimale in complemento a 2
+    if ex[0]=='0': # Se il numero esadecimale è positivo
+        ex_cp2 == '1'+ ex[1:] # Aggiunge il bit di segno
+    else: # Se il numero esadecimale è negativo
+        ex_cp2 == '0' + ex[1:] # Aggiunge il bit di segno
+    return ex_cp2  # Restituisce il numero esadecimale in complemento a 2
