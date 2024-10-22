@@ -79,14 +79,14 @@ def fattoriale(numero):
     else:
         return numero * fattoriale(numero - 1)  # Calcola il fattoriale ricorsivamente
 
-# Funzione per convertire un numero decimale in binario senza usare bin()
+# Funzione per convertire un numero decimale in binario
 def decimale_binario(numero):
-    if numero == 0:
+    if numero == 0: # Se il numero è 0, restituisce '0'
         return '0'
-    binario = ''
-    while numero > 0:
-        binario = str(numero % 2) + binario
-        numero = numero // 2
+    binario = '' # Inizializza la stringa del numero binario
+    while numero > 0: 
+        binario = str(numero % 2) + binario # Aggiunge il resto della divisione per 2 del numero alla stringa binaria
+        numero = numero // 2 # Assegna al numero il risultato della divisione intera per 2 del numero
     return binario
 
 # Funzione per convertire un numero binario in decimale
