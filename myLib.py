@@ -94,7 +94,7 @@ def binario_decimale(binario):
     decimale = int(binario, 2)  # Converte il numero binario in decimale
     return decimale
 
-# Funzione per convertire un numero esadecimale in binario senza usare bin()
+# Funzione per convertire un numero esadecimale in binario
 def esadecimale_binario(esadecimale):
     decimale = int(esadecimale, 16)  # Converte il numero esadecimale in decimale
     return decimale_binario(decimale)  # Converte il numero decimale in binario
