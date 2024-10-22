@@ -52,6 +52,24 @@ Questa libreria Python, myLib.py, contiene una serie di funzioni utili per varie
 - Calcola il fattoriale di un numero.
 - Utilizza una definizione ricorsiva per calcolare il fattoriale.
 
+**decimale_binario(numero):**
+- Converte un numero decimale in una stringa rappresentante il suo equivalente binario.
+- Il principio è quello di dividere ripetutamente il numero per 2 e concatenare i resti (0 o 1) all'inizio di una stringa finché il quoziente non diventa 0.
+Esempio: decimale_binario(13) restituisce "1101".
+
+**binario_decimale(binario):**
+- Converte una stringa binaria in un numero decimale.
+- Utilizza la funzione int() con la base 2 per eseguire la conversione direttamente.
+Esempio: binario_decimale("1101") restituisce 13.
+
+**esadecimale_binario(esadecimale):**
+- Converte un numero esadecimale in una stringa binaria.
+- Prima converte l'esadecimale in decimale utilizzando int() con base 16, poi chiama la funzione decimale_binario() per ottenere la rappresentazione binaria.
+
+**esadecimale_decimale(esadecimale):**
+- Converte un numero esadecimale in un numero decimale.
+- Utilizza la funzione int() con la base 16 per eseguire la conversione direttamente.
+
 Queste funzioni coprono una vasta gamma di operazioni comuni che possono essere utili in vari contesti di programmazione, dalla manipolazione delle stringhe alle operazioni matematiche di base.
 
 # test.py
