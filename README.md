@@ -55,12 +55,12 @@ Questa libreria Python, myLib.py, contiene una serie di funzioni utili per varie
 **decimale_binario(numero):**
 - Converte un numero decimale in una stringa rappresentante il suo equivalente binario.
 - Il principio è quello di dividere ripetutamente il numero per 2 e concatenare i resti (0 o 1) all'inizio di una stringa finché il quoziente non diventa 0.
-Esempio: decimale_binario(13) restituisce "1101".
+- Esempio: decimale_binario(13) restituisce "1101".
 
 **binario_decimale(binario):**
 - Converte una stringa binaria in un numero decimale.
 - Utilizza la funzione int() con la base 2 per eseguire la conversione direttamente.
-Esempio: binario_decimale("1101") restituisce 13.
+- Esempio: binario_decimale("1101") restituisce 13.
 
 **esadecimale_binario(esadecimale):**
 - Converte un numero esadecimale in una stringa binaria.
