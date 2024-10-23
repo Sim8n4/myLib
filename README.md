@@ -70,6 +70,19 @@ Questa libreria Python, myLib.py, contiene una serie di funzioni utili per varie
 - Converte un numero esadecimale in un numero decimale.
 - Utilizza la funzione int() con la base 16 per eseguire la conversione direttamente.
 
+**FrazBin2FrazDecimale(frazBin)**
+- Inizializza il risultato a 0.0.
+- Itera su ogni bit della stringa binaria.
+- Converte ogni bit in un intero e lo aggiunge al risultato moltiplicato per 2 ** (-i - 1).
+- Restituisce la frazione decimale calcolata.
+
+**ex2cp2(ex)**
+- Inizializza una stringa vuota ex_cp2.
+- Controlla il primo carattere della stringa esadecimale:
+- Se è '0', aggiunge '1' al resto della stringa.
+- Se non è '0', aggiunge '0' al resto della stringa.
+- Restituisce ex_cp2.
+
 Queste funzioni coprono una vasta gamma di operazioni comuni che possono essere utili in vari contesti di programmazione, dalla manipolazione delle stringhe alle operazioni matematiche di base.
 
 # test.py
