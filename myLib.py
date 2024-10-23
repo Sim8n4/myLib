@@ -117,8 +117,8 @@ def FrazBin2FrazDecimale(frazBin):
 # Funzione per convertire un numero in eccesso 2 in complemento a 2
 def ex2cp2(ex):
     ex_cp2 = ''
-    if ex[0]=='0': # Se il numero è positivo
-        ex_cp2 == '1'+ ex[1:] # Aggiunge il bit di segno
-    else: # Se il numero è negativo
-        ex_cp2 == '0' + ex[1:] # Aggiunge il bit di segno
+    if ex[0] == '0':  # Se il numero è positivo
+        ex_cp2 = '1' + ex[1:]  # Aggiunge il bit di segno
+    else:  # Se il numero è negativo
+        ex_cp2 = '0' + ex[1:]  # Aggiunge il bit di segno
     return ex_cp2  # Restituisce il numero in complemento a 2
