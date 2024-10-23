@@ -1,4 +1,5 @@
 from myLib import *
+
 def main():
     # Test rimuovi_punteggiatura
     print(rimuovi_punteggiatura("Ciao, mondo!\n"))  # Output atteso: "Ciao mondo"
@@ -38,6 +39,24 @@ def main():
 
     # Test fattoriale
     print(fattoriale(5))  # Output atteso: 120
+
+    # Test decimale_binario
+    print(decimale_binario(10))  # Output atteso: "1010"
+
+    # Test binario_decimale
+    print(binario_decimale("1010"))  # Output atteso: 10
+
+    # Test esadecimale_binario
+    print(esadecimale_binario("A"))  # Output atteso: "1010"
+
+    # Test esadecimale_decimale
+    print(esadecimale_decimale("A"))  # Output atteso: 10
+
+    # Test FrazBin2FrazDecimale
+    print(FrazBin2FrazDecimale("101"))  # Output atteso: 0.625
+
+    # Test ex2cp2
+    print(ex2cp2("0A"))  # Output atteso: "1A" (Nota: la logica di questa funzione potrebbe essere errata)
 
 if __name__ == "__main__":
     main()
