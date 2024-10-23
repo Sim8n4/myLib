@@ -56,7 +56,7 @@ def main():
     print(FrazBin2FrazDecimale("101"))  # Output atteso: 0.625
 
     # Test ex2cp2
-    print(ex2cp2("0A"))  # Output atteso: "1A" (Nota: la logica di questa funzione potrebbe essere errata)
+    print(ex2cp2("0A"))  # Output atteso: "1A"
 
 if __name__ == "__main__":
     main()
