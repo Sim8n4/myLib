@@ -122,3 +122,12 @@ def ex2cp2(ex):
     else:  # Se il numero è negativo
         ex_cp2 = '0' + ex[1:]  # Aggiunge il bit di segno
     return ex_cp2  # Restituisce il numero in complemento a 2
+
+# Funzione per convertire un numero in complemento a 2 in eccesso 2
+def cp2ex2(cp2):
+    ex = ''
+    if cp2[0] == '0':  # Se il numero è positivo
+        ex = '1' + cp2[1:]  # Aggiunge il bit di segno
+    else:  # Se il numero è negativo
+        ex = '0' + cp2[1:]  # Aggiunge il bit di segno
+    return ex  # Restituisce il numero in eccesso 2
